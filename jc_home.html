@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> JelouChat v1.0 </title>
+	<!--<script src="cordova-2.1.0.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/AmbienteAzul.css" />
+	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.4.1.min.css" /> 
+	
+  	<script src="assets/js/jquery.js"></script> 
+  	<script src="assets/jquery-mobile/jquery.mobile-1.4.1.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<script type="text/javascript" src="http://proyectosmichaelserrato.tk/jelouchat/getMsg.js"></script>
+
+
+</head>
+<body>
+
+<div data-role="page" data-theme="c" id="jc_home">
+
+
+
+<div data-role="panel" id="mypanel" class="panel-scroll" data-position="left" data-display="reveal" data-dismissible="true" data-theme="c">
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Opciones </li>
+        <li><a href="#"> Registrarse </a></li>
+    </ul>
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Acerca de </li>
+        <li><a href="#"> Desarrolladores </a></li>
+        <li><a href="#"> Propósito </a></li>
+    </ul>
+    <a href="#header" data-rel="close" data-role="button" data-icon="delete" data-theme="c" data-inline="true"> Cerrar Panel </a>
+</div>
+
+
+
+	<div id="header" class="ui-header ui-bar-b" data-swatch="a" data-theme="c" data-position="fixed" data-role="header" role="banner">
+		<a href="#mypanel" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow" title="Navigation" data-role="button" role="button" data-form="ui-icon"> Navigation </a>
+		<h1 class="app_name">
+			<img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> JelouChat v1.0
+		</h1>
+	</div>
+	<div class="ui-content ui-page-theme-d" data-form="ui-page-theme-c">
+		<div id="allMsgPublic" class="ui-body ui-body-c ui-corner-all" data-form="ui-body-c" data-theme="c">
+
+<h3 class="legend-center"> Últimas Noticias </h3>
+
+<ul id="allMsgPublicListView" data-role="listview" data-inset="true" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+
+
+
+    
+
+</ul>
+
+
+
+
+
+
+		<div class="ui-body"></div>
+		<div class="ui-body"></div>
+		</div>
+	</div>
+	<div id="footer" data-role="footer" data-position="fixed" data-theme="b" role="footer" class="ui-footer">
+		<form action="#" method="post">
+			<table style="display: block; margin: auto; width: 96%;">
+				<tr>
+					<td width="100%"> 
+						<textarea style="height: 74px; max-height: 75px !important; overflow: auto; resize: none; color: #1D1D1D;" placeholder="Escribe un estado..."></textarea>
+					</td>
+					<td width="100%">
+						<input type="submit" class="ui-btn" data-theme="c" value="Enviar">
+					</td>
+				</tr>		
+			</table>
+		</form>
+	</div>
+</div>
+
+<div id="MsgOrderById">
+	
+
+</div>
+
+
+
+</body>
+</html>
