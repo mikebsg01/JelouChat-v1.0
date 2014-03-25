@@ -53,5 +53,94 @@ h5.text-loading, h5.load {
    /* overflow: scroll; */
 }
 
+.theme-science {
+	background-color: #5bb75b !important;
+	background-image: linear-gradient(to bottom, #62c462, #51a351) !important;
+	background-image: -moz-linear-gradient(to bottom, #62c462, #51a351) !important;
+	background-image: -webkit-linear-gradient(to bottom, #62c462, #51a351) !important;
+	background-image: -o-linear-gradient(to bottom, #62c462, #51a351) !important;
+}
+
+.theme-science:hover, 
+.theme-science:active,
+.theme-science:focus {
+	background-color: #6CC86C !important;
+	background-image: linear-gradient(to bottom, #84D684, #62B462) !important;
+	background-image: -moz-linear-gradient(to bottom, #84D684, #62B462) !important;
+	background-image: -webkit-linear-gradient(to bottom, #84D684, #62B462) !important;
+	background-image: -o-linear-gradient(to bottom, #84D684, #62B462) !important;
+}
 
 
+.theme-technology {
+	background-color: #0066cc !important;
+	background-image: linear-gradient(to bottom,#0088cc, #0044cc) !important;
+	background-image: -moz-linear-gradient(to bottom,#0088cc, #0044cc) !important;
+	background-image: -webkit-linear-gradient(to bottom,#0088cc, #0044cc) !important;
+	background-image: -o-linear-gradient(to bottom,#0088cc, #0044cc) !important;
+}
+.theme-technology:hover, 
+.theme-technology:active,
+.theme-technology:focus {
+	background-color: #0088DD !important;
+	background-image: linear-gradient(to bottom,#0099DD, #0055DD) !important;
+	background-image: -moz-linear-gradient(to bottom,#0099DD, #0055DD) !important;
+	background-image: -webkit-linear-gradient(to bottom,#0099DD, #0055DD) !important;
+	background-image: -o-linear-gradient(to bottom,#0099DD, #0055DD) !important;
+}
+.theme-mathematics {
+	background-color: #49afcd !important;
+	background-image: linear-gradient(to bottom, #5bc0de, #2f96b4) !important;
+	background-image: -moz-linear-gradient(to bottom, #5bc0de, #2f96b4) !important;
+	background-image: -webkit-linear-gradient(to bottom, #5bc0de, #2f96b4) !important;
+	background-image: -o-linear-gradient(to bottom, #5bc0de, #2f96b4) !important;
+}
+
+.theme-mathematics:hover, 
+.theme-mathematics:active,
+.theme-mathematics:focus {
+	background-color: #69CFDF !important;
+	background-image: linear-gradient(to bottom, #6CD2EF, #4F98B8) !important;
+	background-image: -moz-linear-gradient(to bottom, #6CD2EF, #4F98B8) !important;
+	background-image: -webkit-linear-gradient(to bottom, #5bc0de, #2f96b4) !important;
+	background-image: -o-linear-gradient(to bottom, #6CD2EF, #4F98B8) !important;
+}
+
+.theme-literature {
+	background-color: #faa732 !important;
+	background-image: linear-gradient(to bottom, #fbb450, #f89406) !important;
+	background-image: -moz-linear-gradient(to bottom, #fbb450, #f89406) !important;
+	background-image: -webkit-linear-gradient(to bottom, #fbb450, #f89406) !important;
+	background-image: -o-linear-gradient(to bottom, #fbb450, #f89406) !important;
+}
+
+.theme-literature:hover, 
+.theme-literature:active,
+.theme-literature:focus {
+	background-color: #FBB843 !important;
+	background-image: linear-gradient(to bottom, #FCC561, #F99618) !important;
+	background-image: -moz-linear-gradient(to bottom, #FCC561, #F99618) !important;
+	background-image: -webkit-linear-gradient(to bottom, #FCC561, #F99618) !important;
+	background-image: -o-linear-gradient(to bottom, #FCC561, #F99618) !important;
+}
+
+.list-msg {
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	padding: .25em;
+}
+
+.img-perfil {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	top: 0;
+	left: 0;
+	max-width: 5em;
+	max-height: 5em;
+}
+.container-msg{
+	margin-left: .25em;
+	display: inline-block;
+	vertical-align: top;
+}

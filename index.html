@@ -12,6 +12,7 @@
   	<script src="assets/js/jquery.js"></script> 
   	<script src="assets/jquery-mobile/jquery.mobile-1.4.1.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 <!--
@@ -62,7 +63,7 @@
            <h1> Bienvenido a </h1>
            <img src="assets/jelouchat-images/JelouChat-header-1.0.0-beta.png" width="92%" style="display: block; margin: auto;">
             <div class="ui-body ui-br"></div>
-                <form action="jc_home.html" method="post" data-theme="c">
+                <form action="#" method="post" data-theme="c">
                     <hgroup>
                         <h3 class="legend-center"> Ingresar </h3>
                     </hgroup>
@@ -97,15 +98,148 @@
 
 
 
+<div data-role="page" data-theme="c" id="jc_home">
+
+
+
+<div data-role="panel" id="mypanel" class="panel-scroll" data-position="left" data-display="reveal" data-dismissible="true" data-theme="c">
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Opciones </li>
+        <li><a href="#"> Registrarse </a></li>
+    </ul>
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Acerca de </li>
+        <li><a href="#"> Desarrolladores </a></li>
+        <li><a href="#"> Propósito </a></li>
+    </ul>
+    <a href="#header" data-rel="close" data-role="button" data-icon="delete" data-theme="c" data-inline="true"> Cerrar Panel </a>
+</div>
+
+
+
+    <div id="header" class="ui-header ui-bar-b" data-swatch="a" data-theme="c" data-position="fixed" data-role="header" role="banner">
+        <a href="#mypanel" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow" title="Navigation" data-role="button" role="button" data-form="ui-icon"> Navigation </a>
+        <h1 class="app_name">
+            <img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> JelouChat v1.0
+        </h1>
+    </div>
+    <div class="ui-content ui-page-theme-d" data-form="ui-page-theme-c">
+        <div id="allMsgPublic" class="ui-body ui-body-c ui-corner-all" data-form="ui-body-c" data-theme="c">
+<!--
+<h3 class="legend-center"> Últimas Noticias </h3>
+
+
+
+<ul id="allMsgPublicListView" data-role="listview" data-inset="true" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+
+
+
+    
+
+</ul>
+
+-->
+
+<h3><p class="legend-center"> Elija una Sala: </p></h3>
+
+
+<ul id="themes-community" data-role="listview" data-inset="true" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <li class="ui-li-has-thumb"><a href="#jc_science" class="theme-science theme"><img src="assets/jelouchat-images/JelouChat-1.0beta.jpg"> Ciencias </a></li>
+    <li class="ui-li-has-thumb"><a href="#" class="theme-technology theme"><img src="assets/jelouchat-images/JelouChat-1.0beta.jpg"> Tecnología </a></li>
+    <li class="ui-li-has-thumb"><a href="#" class="theme-mathematics theme"><img src="assets/jelouchat-images/JelouChat-1.0beta.jpg"> Matemáticas </a></li>
+    <li class="ui-li-has-thumb"><a href="#" class="theme-literature theme"><img src="assets/jelouchat-images/JelouChat-1.0beta.jpg"> Español & Literatura </a></li>
+</ul>
+
+
+
+
+
+
+        <div class="ui-body"></div>
+        <div class="ui-body"></div>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" data-theme="c" id="jc_science">
+
+
+
+<div data-role="panel" id="mypanel" class="panel-scroll" data-position="left" data-display="reveal" data-dismissible="true" data-theme="c">
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Opciones </li>
+        <li><a href="#"> Registrarse </a></li>
+    </ul>
+    <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+        <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Acerca de </li>
+        <li><a href="#"> Desarrolladores </a></li>
+        <li><a href="#"> Propósito </a></li>
+    </ul>
+    <a href="#header" data-rel="close" data-role="button" data-icon="delete" data-theme="c" data-inline="true"> Cerrar Panel </a>
+</div>
+
+
+
+    <div id="header" class="ui-header ui-bar-b" data-swatch="a" data-theme="c" data-position="fixed" data-role="header" role="banner">
+        <a href="#mypanel" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow" title="Navigation" data-role="button" role="button" data-form="ui-icon"> Navigation </a>
+        <h1 class="app_name">
+            <img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> JelouChat v1.0
+        </h1>
+    </div>
+    <div class="ui-content ui-page-theme-d" data-form="ui-page-theme-c">
+        <div id="allMsgPublic" class="ui-body ui-body-c ui-corner-all" data-form="ui-body-c" data-theme="c">
+
+<h3 class="legend-center"> Últimas Noticias </h3>
+
+
+
+
+<div id="allMsgPublicListView">
+
+
+
+    
+
+</div>
+
+
+        <div class="ui-body"></div>
+        <div class="ui-body"></div>
+        </div>
+    </div>
+
+    <div id="footer" data-role="footer" data-position="fixed" data-theme="b" role="footer" class="ui-footer">
+        <form action="#" method="post">
+            <table style="display: block; margin: auto; width: 96%;">
+                <tr>
+                    <td width="100%"> 
+                        <textarea style="height: 74px; max-height: 75px !important; overflow: auto; resize: none; color: #1D1D1D;" placeholder="Escribe un estado..." id="textMsg-Science"></textarea>
+                    </td>
+                    <td width="100%">
+                        <input type="submit" id="submitMsg-Science" class="ui-btn" data-theme="c" value="Enviar">
+                    </td>
+                </tr>       
+            </table>
+        </form>
+    </div>
+</div>
+
+<div id="MsgOrderById">
+    
+
+</div>
+
 
 
 
 
 
 <script type="text/javascript">
-    
+var username = "";
+$(document).on('pageinit','#welcome',function(event){
 
-$(document).ready(function(){
+
     
     var cicle = 0;
     var intent = 0;
@@ -136,18 +270,60 @@ $(document).ready(function(){
     },6000);
 
     setTimeout(function(){
-        window.location = 'index.html#index';
+        window.location = 'jc_alternative.html#index';
     },8100);
-
-
-
-
 
 });
 
 
+$(document).on('pageinit','#index',function(event){
+    
+    $('#login').click(function(event){
+        event.preventDefault();
+        username = $('#username').val();
+        window.location = 'jc_alternative.html#jc_home';
+    });
+
+});
+
+
+$(document).on('pageinit', '#jc_home', function(){
+    $('.theme').click(function(event){
+        event.preventDefault();
+        var page = $(this).attr('href');
+        switch(page){
+            case '#jc_science':
+                alert("load");
+                var script = document.createElement( 'script' );
+                script.type = 'text/javascript';
+                script.src = "http://proyectosmichaelserrato.tk/jelouchat/getMsg-Science.js";
+                $("body").append(script);
+
+                var script2 = document.createElement( 'script' );
+                script2.type = 'text/javascript';
+                script2.src = "http://proyectosmichaelserrato.tk/jelouchat/postMsg-Science.js";
+                $("body").append(script2);
+
+                alert("ya");
+                alert("Username: "+username);
+                break;
+            case '#jc_technology':
+                break;
+            case '#jc_mathematics':
+                break;
+            case '#jc_literature':
+                break;
+            default:
+                break;
+        }
+        window.location = 'jc_alternative.html'+page;
+    });
+
+});
+
 
 </script>
+
 
 
 </body>
