@@ -8,9 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/AmbienteAzul.css" />
 	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.4.1.min.css" /> 
+	
   	<script src="assets/js/jquery.js"></script> 
   	<script src="assets/jquery-mobile/jquery.mobile-1.4.1.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript">
+    var username = "";
+</script>
+    <script type="text/javascript" src="http://proyectosmichaelserrato.tk/jelouchat/postMsg-all.js"></script>
 
 </head>
 <body>
@@ -228,6 +233,8 @@
     
 
 </div>
+<div  id="username-data" value="" name="">
+</div>
 
 
 
@@ -235,7 +242,7 @@
 
 
 <script type="text/javascript">
-var username = "";
+
 $(document).on('pageinit','#welcome',function(event){
 
 
@@ -280,6 +287,8 @@ $(document).on('pageinit','#index',function(event){
     $('#login').click(function(event){
         event.preventDefault();
         username = $('#username').val();
+        $("#username-data").val(""+username+"");
+        $("#username-data").attr("name",""+username+"");
         window.location = 'index.html#jc_home';
     });
 
@@ -293,16 +302,17 @@ $(document).on('pageinit', '#jc_home', function(){
         switch(page){
             case '#jc_science':
                 alert("load");
+                
                 var script = document.createElement( 'script' );
                 script.type = 'text/javascript';
                 script.src = "http://proyectosmichaelserrato.tk/jelouchat/getMsg-Science.js";
                 $("body").append(script);
-
+/*
                 var script2 = document.createElement( 'script' );
                 script2.type = 'text/javascript';
                 script2.src = "http://proyectosmichaelserrato.tk/jelouchat/postMsg-Science.js";
                 $("body").append(script2);
-
+                    */
                 alert("ya");
                 alert("Username: "+username);
                 break;
