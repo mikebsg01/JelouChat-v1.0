@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/AmbienteAzul.css" />
 	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.4.1.min.css" /> 
-	
   	<script src="assets/js/jquery.js"></script> 
   	<script src="assets/jquery-mobile/jquery.mobile-1.4.1.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -270,7 +269,7 @@ $(document).on('pageinit','#welcome',function(event){
     },6000);
 
     setTimeout(function(){
-        window.location = 'jc_alternative.html#index';
+        window.location = 'index.html#index';
     },8100);
 
 });
@@ -281,7 +280,7 @@ $(document).on('pageinit','#index',function(event){
     $('#login').click(function(event){
         event.preventDefault();
         username = $('#username').val();
-        window.location = 'jc_alternative.html#jc_home';
+        window.location = 'index.html#jc_home';
     });
 
 });
@@ -316,7 +315,7 @@ $(document).on('pageinit', '#jc_home', function(){
             default:
                 break;
         }
-        window.location = 'jc_alternative.html'+page;
+        window.location = 'index.html'+page;
     });
 
 });
