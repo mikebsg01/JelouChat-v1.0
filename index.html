@@ -188,13 +188,13 @@
     <div id="header" class="ui-header ui-bar-b" data-swatch="a" data-theme="c" data-position="fixed" data-role="header" role="banner">
         <a href="#mypanel" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow" title="Navigation" data-role="button" role="button" data-form="ui-icon"> Navigation </a>
         <h1 class="app_name">
-            <img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> JelouChat v1.0
+            <img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> Sala de Ciencias
         </h1>
     </div>
     <div class="ui-content ui-page-theme-d" data-form="ui-page-theme-c">
         <div id="allMsgPublic" class="ui-body ui-body-c ui-corner-all" data-form="ui-body-c" data-theme="c">
 
-<h3 class="legend-center"> Últimas Noticias </h3>
+<h3 class="legend-center"> Últimos Mensajes Enviados </h3>
 
 
 
@@ -301,7 +301,6 @@ $(document).on('pageinit', '#jc_home', function(){
         var page = $(this).attr('href');
         switch(page){
             case '#jc_science':
-                alert("load");
                 
                 var script = document.createElement( 'script' );
                 script.type = 'text/javascript';
@@ -313,8 +312,6 @@ $(document).on('pageinit', '#jc_home', function(){
                 script2.src = "http://proyectosmichaelserrato.tk/jelouchat/postMsg-Science.js";
                 $("body").append(script2);
                     */
-                alert("ya");
-                alert("Username: "+username);
                 break;
             case '#jc_technology':
                 break;
