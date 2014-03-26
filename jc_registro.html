@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        	<meta charset="utf-8" />
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+        	<title> JelouChat v1.0 </title>
+        	<!--<script src="cordova-2.1.0.js"></script>-->
+        	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/AmbienteAzul.css" />
+        	<link rel="stylesheet" type="text/css" href="assets/jquery-mobile/jquery.mobile.icons.min.css" />
+        	<link rel="stylesheet" href="assets/jquery-mobile/jquery.mobile.structure-1.4.1.min.css" /> 
+        	<link rel="shortcut icon" type="image/x-icon" href="assets/jelouchat-images/favicon.ico" />
+          	<script src="assets/js/jquery.js"></script> 
+          	<script src="assets/jquery-mobile/jquery.mobile-1.4.1.min.js"></script> 
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            
+    </head>
+    <body>
+            <div data-role="page" data-theme="c" id="jc_ddevelopers">
+
+
+
+        <div data-role="panel" id="mypanel" class="panel-scroll" data-position="left" data-display="reveal" data-dismissible="true" data-theme="c">
+            <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+                <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Opciones 
+
+                </li>
+                <li><a href="index.html#index">Inicio</a></li>
+                <li><a href="jc_registro.html"> Registrarse </a></li>
+            </ul>
+            <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="c">
+                <li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-c ui-first-child" data-theme="c"> Acerca de </li>
+                <li><a href="jc_developers.html"> Desarrolladores </a></li>
+                <li><a href="proposit.html"> Propósito </a></li>
+            </ul>
+            <a href="#header" data-rel="close" data-role="button" data-icon="delete" data-theme="c" data-inline="true"> Cerrar Panel </a>
+        </div>
+
+
+
+    	<div id="header" class="ui-header ui-bar-b" data-swatch="a" data-theme="c" data-position="fixed" data-role="header" role="banner">
+    		<a href="#mypanel" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow" title="Navigation" data-role="button" role="button" data-form="ui-icon"> Navigation </a>
+    		<h1 class="app_name">
+    			<img src="assets/jelouchat-images/apple-touch-icon-jelouchat-72-precomposed.png" class="app_logo"> JelouChat v1.0
+    		</h1>
+    	</div>
+    	<div class="ui-content ui-page-theme-d" data-form="ui-page-theme-c">
+    		<div id="allMsgPublic" class="ui-body ui-body-c ui-corner-all" data-form="ui-body-c" data-theme="c">
+    
+    <h3 class="legend-center">Registro</h3>
+    
+   <form action="">
+            
+                <font color="gray"><label><h5>los campos marcados con ( * ) son requeridos</h5></label></font>
+                <label >Nombre*</label><input data-theme="a" type="text" value="Escriba su nombre...">
+                <label>Apellido</label><input data-theme="a" type="text" value="Escriba sus apellidos...">
+                <label>Usuario*</label><input data-theme="a" type="text"value="Escriba su alias">
+                <label>Correo*</label><input data-theme="a" type="text" value="Escriba su correo electrónico...">         
+                <label>Contraseña*</label><input data-theme="a" type="password" value="123456789">
+                <label>Repetir contraseña*</label><input data-theme="a" type="password" value="123456789">
+            
+        </form>
+    <h3 class="legend-center"><input type="submit" value="Registrar" onclick="javascript:alert('EnviadoxD');"></h3><!---->
+   
+    </body>
+    
+</html>
